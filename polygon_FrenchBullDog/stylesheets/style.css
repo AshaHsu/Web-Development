@@ -1,0 +1,80 @@
+@-webkit-keyframes FrenchBullDog {
+  0% {
+    transform: translate(-3959%, 4229%);
+    opacity: 0;
+  }
+  30%, 60% {
+    transform: translate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-4396%, 1880%);
+    opacity: 0;
+  }
+}
+@-moz-keyframes FrenchBullDog {
+  0% {
+    transform: translate(714%, -4087%);
+    opacity: 0;
+  }
+  30%, 60% {
+    transform: translate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-2001%, -719%);
+    opacity: 0;
+  }
+}
+@-o-keyframes FrenchBullDog {
+  0% {
+    transform: translate(-2846%, -1713%);
+    opacity: 0;
+  }
+  30%, 60% {
+    transform: translate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-2377%, 3499%);
+    opacity: 0;
+  }
+}
+@keyframes FrenchBullDog {
+  0% {
+    transform: translate(3956%, -3572%);
+    opacity: 0;
+  }
+  30%, 60% {
+    transform: translate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-3389%, 351%);
+    opacity: 0;
+  }
+}
+/* line 42, ../sass/style.scss */
+body {
+  margin: 0;
+  overflow: hidden;
+}
+/* line 46, ../sass/style.scss */
+body svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  background: -webkit-radial-gradient(#CC7781, #000);
+  background: -o-radial-gradient(#CC7781, #000);
+  background: -moz-radial-gradient(#CC7781, #000);
+  background: radial-gradient(#cc7781, #000000);
+}
+/* line 56, ../sass/style.scss */
+body svg polygon {
+  opacity: 0;
+  -webkit-animation: FrenchBullDog 12s infinite;
+  -moz-animation: FrenchBullDog 12s infinite;
+  -o-animation: FrenchBullDog 12s infinite;
+  animation: FrenchBullDog 12s infinite;
+}

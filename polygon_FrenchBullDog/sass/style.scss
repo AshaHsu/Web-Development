@@ -1,0 +1,64 @@
+$time: 12s;
+$rand: 5000;
+
+@function rand($val){
+  @if (random($val)) > $val/2{
+    @return percentage(random($val)/100);
+  }@else{
+    @return - percentage(random($val)/100);
+  }  
+}
+
+@mixin animation($name){
+    @-webkit-keyframes #{$name}{
+        @content;
+    }
+    @-moz-keyframes #{$name}{
+        @content;
+    }
+    @-o-keyframes #{$name}{
+        @content;
+    }
+    @keyframes #{$name}{
+        @content;
+    }
+}
+
+@include animation(FrenchBullDog){
+  0%{
+     transform: translate(rand($rand), rand($rand));
+     opacity: 0;
+  }
+  30%, 60%{
+     transform: translate(0);
+     opacity: 1;
+  }
+  100%{
+     transform: translate(rand($rand), rand($rand));
+     opacity: 0;
+  }
+}
+
+body{
+  margin: 0;
+  overflow: hidden;
+  
+  svg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    background: -webkit-radial-gradient(#CC7781, #000);
+    background: -o-radial-gradient(#CC7781, #000);
+    background: -moz-radial-gradient(#CC7781, #000);
+    background: radial-gradient(#CC7781, #000);
+    
+    polygon{     
+      opacity: 0;
+      -webkit-animation: FrenchBullDog $time infinite;
+      -moz-animation: FrenchBullDog $time infinite;
+      -o-animation: FrenchBullDog $time infinite;
+      animation: FrenchBullDog $time infinite; 
+    }
+  }
+}
