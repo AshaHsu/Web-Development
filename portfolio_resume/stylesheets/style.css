@@ -1,0 +1,43 @@
+/* line 1, ../sass/style.scss */
+html,
+body {
+  background-color: #ECE5D1;
+  margin-top: 2%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* line 8, ../sass/style.scss */
+#title {
+  table-layout: fixed;
+  width: 100%;
+  margin-top: 3%;
+  border-spacing: 25px;
+}
+/* line 13, ../sass/style.scss */
+#title td {
+  font-size: 15px;
+}
+
+/* line 18, ../sass/style.scss */
+#content {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+/* line 25, ../sass/style.scss */
+#content td {
+  word-wrap: break-word;
+  padding: 10px;
+}
+/* line 32, ../sass/style.scss */
+#content #time span {
+  background-color: #44AD9E;
+  font-weight: bold;
+  color: white;
+  border-radius: 10%;
+}
+/* line 41, ../sass/style.scss */
+#content #location span {
+  font-weight: bold;
+  font-size: 15px;
+}

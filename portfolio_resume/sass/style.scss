@@ -1,0 +1,47 @@
+html,
+body {
+	background-color:#ECE5D1;
+    margin-top: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#title {
+    table-layout: fixed;
+    width: 100%;
+    margin-top: 3%;
+    border-spacing: 25px;
+    td {
+        font-size: 15px;
+    }
+}
+
+#content {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    tr {
+        // height: 50px;
+    }
+    td {
+        word-wrap: break-word;
+        padding: 10px;
+    }
+
+    #time{
+    	// position: absolute;
+    	span{
+background-color:#44AD9E;
+font-weight: bold;
+color:white;
+border-radius: 10%;
+    	}
+    }
+
+    #location{
+    	span{
+    		font-weight:bold;
+    		font-size: 15px;
+    	}
+    }
+    
+}
