@@ -1,0 +1,147 @@
+body,
+html {
+    max-width: 100%;
+    min-height:500%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+.outer {
+    position: relative;
+    overflow: hidden;
+    .school {
+        position: relative;
+        overflow: hidden;
+        height: 200vh;
+        width: 100vw;
+        background-color: #FFE9DC;
+    z-index:4;
+    }
+    #schooltime {
+        display: block;
+        width: 600px;
+        margin: 200px auto;
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 80px;
+        letter-spacing: 5px;
+        color: black;
+        .schoolPic {
+            height: 400px;
+            width: 600px;
+        }
+    }
+
+
+    .job {
+        position: relative;
+        overflow: hidden;
+        height: 100vh;
+        width: 100vw;
+        background-color: #D9FFE5;
+        z-index: 0;
+        .screen {
+            display: block;
+            height: 400px;
+            width: 500px;
+            top: 30%;
+            position: relative;
+            .dev {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            #text {
+                position: absolute;
+                text-align: left;
+                color: #AB5D61;
+                font-size: 15px;
+                line-height: 20px;
+                left: 90px;
+                width: 350px;
+                top: 20px;
+            }
+        }
+        .finger {
+            width: 350px;
+            position: relative;
+            height: 0;
+            .fin {
+                width: 80px;
+                height: 180px;
+            }
+            #finger {
+                color: red;
+                font-size: 20px;
+                left: 90px;
+                letter-spacing: 5px;
+            }
+        }
+    }
+
+}
+
+#title {
+    width: 100%;
+    height: 8%;
+    position: fixed;
+    border-collapse: collapse;
+    z-index:5;
+    td {
+        padding: 10px;
+    }
+    #first {
+        color: white;
+        font-weight: bold;
+        font-size: 40px;
+        text-align: left;
+        vertical-align: bottom;
+    }
+}
+
+#description {
+    display: inline-block;
+    vertical-align: top;
+    width: 700px;
+    height: 10%;
+    margin: -310px auto;
+    border-spacing: 100px;
+    td {
+        word-wrap: break-word;
+        line-height: 45px;
+        text-align: center;
+        #game {
+            font-size: 20px;
+            font-weight: bold;
+            color: red;
+            .controller {
+                height: 90px;
+                width: 160px;
+            }
+        }
+        .gbc {
+            height: 120px;
+            width: 170px;
+        }
+    }
+}
+
+#jobEx {
+    position: block;
+    border-spacing: 40px;
+    letter-spacing: 5px;
+    td {
+        width: 550px;
+        text-align: center;
+    }
+    #time {
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: 5px;
+    }
+    #company {
+        font-size: 20px;
+    }
+}

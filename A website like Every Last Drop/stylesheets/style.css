@@ -1,0 +1,168 @@
+/* line 1, ../sass/style.scss */
+body,
+html {
+  max-width: 100%;
+  min-height: 500%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
+/* line 11, ../sass/style.scss */
+.outer {
+  position: relative;
+  overflow: hidden;
+}
+/* line 14, ../sass/style.scss */
+.outer .school {
+  position: relative;
+  overflow: hidden;
+  height: 200vh;
+  width: 100vw;
+  background-color: #FFE9DC;
+  z-index: 4;
+}
+/* line 22, ../sass/style.scss */
+.outer #schooltime {
+  display: block;
+  width: 600px;
+  margin: 200px auto;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 80px;
+  letter-spacing: 5px;
+  color: black;
+}
+/* line 31, ../sass/style.scss */
+.outer #schooltime .schoolPic {
+  height: 400px;
+  width: 600px;
+}
+/* line 38, ../sass/style.scss */
+.outer .job {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  background-color: #D9FFE5;
+  z-index: 0;
+}
+/* line 45, ../sass/style.scss */
+.outer .job .screen {
+  display: block;
+  height: 400px;
+  width: 500px;
+  top: 30%;
+  position: relative;
+}
+/* line 51, ../sass/style.scss */
+.outer .job .screen .dev {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* line 56, ../sass/style.scss */
+.outer .job .screen #text {
+  position: absolute;
+  text-align: left;
+  color: #AB5D61;
+  font-size: 15px;
+  line-height: 20px;
+  left: 90px;
+  width: 350px;
+  top: 20px;
+}
+/* line 67, ../sass/style.scss */
+.outer .job .finger {
+  width: 350px;
+  position: relative;
+  height: 0;
+}
+/* line 71, ../sass/style.scss */
+.outer .job .finger .fin {
+  width: 80px;
+  height: 180px;
+}
+/* line 75, ../sass/style.scss */
+.outer .job .finger #finger {
+  color: red;
+  font-size: 20px;
+  left: 90px;
+  letter-spacing: 5px;
+}
+
+/* line 86, ../sass/style.scss */
+#title {
+  width: 100%;
+  height: 8%;
+  position: fixed;
+  border-collapse: collapse;
+  z-index: 5;
+}
+/* line 92, ../sass/style.scss */
+#title td {
+  padding: 10px;
+}
+/* line 95, ../sass/style.scss */
+#title #first {
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: left;
+  vertical-align: bottom;
+}
+
+/* line 104, ../sass/style.scss */
+#description {
+  display: inline-block;
+  vertical-align: top;
+  width: 700px;
+  height: 10%;
+  margin: -310px auto;
+  border-spacing: 100px;
+}
+/* line 111, ../sass/style.scss */
+#description td {
+  word-wrap: break-word;
+  line-height: 45px;
+  text-align: center;
+}
+/* line 115, ../sass/style.scss */
+#description td #game {
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+}
+/* line 119, ../sass/style.scss */
+#description td #game .controller {
+  height: 90px;
+  width: 160px;
+}
+/* line 124, ../sass/style.scss */
+#description td .gbc {
+  height: 120px;
+  width: 170px;
+}
+
+/* line 131, ../sass/style.scss */
+#jobEx {
+  position: block;
+  border-spacing: 40px;
+  letter-spacing: 5px;
+}
+/* line 135, ../sass/style.scss */
+#jobEx td {
+  width: 550px;
+  text-align: center;
+}
+/* line 139, ../sass/style.scss */
+#jobEx #time {
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+/* line 144, ../sass/style.scss */
+#jobEx #company {
+  font-size: 20px;
+}
